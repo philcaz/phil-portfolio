@@ -24,7 +24,7 @@ function Portfolio() {
           <ProjectCard
             key={index}
             {...project}
-            onButtonClick={() => project.videoUrl ? openModal(project.videoUrl) : window.open(project.linkUrl, "_blank")}
+            onButtonClick={() => project.videoUrl ? openModal(project.videoUrl) : window.open(project.externalUrl, "_blank")}
           />
         ))}
       </div>

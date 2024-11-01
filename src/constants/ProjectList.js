@@ -26,6 +26,7 @@ const projectList = [
       description: "A data science project that uses web-scraping, RESTful API and machine learning to predict housing prices and assess real estate trends from extensive data.",
       buttonLabel: "GitHub Link",
       linkUrl: dsPDF,
+      externalUrl: "https://github.com/MAST30034-Applied-Data-Science/generic-real-estate-consulting-project-group-43"
     }
   ];
   
