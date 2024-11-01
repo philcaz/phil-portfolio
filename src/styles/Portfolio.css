@@ -1,0 +1,186 @@
+.portfolio {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-head {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 28%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Add different delay for each project */
+.project:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.project:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.project:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.project-image {
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 0.8s;
+}
+
+.project-title {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 1s;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    flex: 1;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 1.2s;
+}
+
+.project button {
+    padding: 10px 20px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 60%;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards 1.4s;
+}
+
+.project button:hover {
+    background-color: #716d6d;
+    transition: background-color 0.3s ease;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keep your existing media queries and modal styles */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project {
+        width: 80%;
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+}
+
+.modal-content iframe {
+    width: 100%; /* Take full width of modal */
+    height: 450px; /* Set a larger height */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}

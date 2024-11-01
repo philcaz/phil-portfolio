@@ -1,0 +1,117 @@
+/* General Header styles */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+header {
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.heading {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: #000;
+    color: #fff;
+}
+
+nav a.active {
+    background: #000;
+    color: #fff;
+}
+
+
+
+.nav-links li {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Header styles */
+@media (max-width: 768px) {
+    header {
+        padding: 20px; /* Reduce padding for mobile */
+    }
+
+    .heading h1 {
+        font-size: 1.5em; /* Reduce font size for the title */
+    }
+
+    .nav-toggle {
+        display: inline-block; /* Show toggle button on small screens */
+        font-size: 1.5em; /* Size for the toggle button */
+        margin-right: 10px; /* Add some spacing for the toggle button */
+    }
+
+    nav {
+        display: none; /* Hide nav by default on small screens */
+    }
+
+    nav.open {
+        display: block; /* Show nav when toggled open */
+        position: absolute;
+        top: 60px; /* Position below the header */
+        right: 10px; /* Align it with the toggle button */
+        background-color: white; /* Background color for visibility */
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Style nav links */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: none; /* Hide all links by default */
+    }
+
+    nav ul li .active {
+        display: block; /* Only show the active link */
+    }
+
+    nav.open ul li {
+        display: block; /* Show all links when nav is open */
+        padding: 5px 0; /* Add spacing between links */
+    }
+}
