@@ -8,7 +8,7 @@ import Skill from "./components/Skill"
 import Layout from "./components/Layout"
 function App() {
   return (
-    <Router basename='/phil-portfolio/'>
+    <Router>
       <Layout> {/* Layout wraps all routes so Header is consistent */}
         <Routes>
           <Route path="/" element={<Home />} />
