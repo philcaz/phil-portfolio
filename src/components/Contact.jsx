@@ -1,5 +1,5 @@
 import React from "react";
-import life_image from "../assets/media/trip.jpg"
+import life_image from "../assets/media/trip.png"
 import "../styles/Contact.css"
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

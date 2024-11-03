@@ -12,7 +12,7 @@ const SkillList = [
         "Experienced in frontend framework (React) including Hooks, Props, Event/Action Handling, Component Trees",
         "Experienced in backend tools including Node.js, PostgreSQL (pgAdmin 4), MongoDB, Firebase",
         "Experienced in calling/designing RESTful API methods (axios) and testing with Postman",
-        "Experienced in using Git for source code management, including committing changes, merging branches, and resolving conflicts to maintain efficient workflows in collaborative projects",
+        "Experienced in using Git for source code management, including pull request submission/review, actions workflow and CI/CD pipeline to maintain efficient workflows in collaborative projects",
       ],
     },
     {

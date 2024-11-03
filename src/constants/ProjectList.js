@@ -3,6 +3,7 @@ import posterPhoto from "../../src/assets/media/poster.png"
 import posterPDF from "../../src/assets/media/final_poster.pdf"
 import dsPhoto from "../../src/assets/media/ds_project.png"
 import dsPDF from "../../src/assets/media/ds_project.pdf"
+import daPhoto from "../../src/assets/media/bellabeat.png"
 
 const projectList = [
     {
@@ -27,6 +28,13 @@ const projectList = [
       buttonLabel: "GitHub Link",
       linkUrl: dsPDF,
       externalUrl: "https://github.com/MAST30034-Applied-Data-Science/generic-real-estate-consulting-project-group-43"
+    },
+    {
+      imageSrc: daPhoto,
+      title: "Bellabeat Project",
+      description: "A data analytic project in R that helps a health tracker company better design and deliver fitness advice for customers with diverse health needs.",
+      buttonLabel: "Kaggle Link",
+      externalUrl: "https://www.kaggle.com/phikho/bellabeat-project"
     }
   ];
   
