@@ -4,8 +4,16 @@ import posterPDF from "../../src/assets/media/final_poster.pdf"
 import dsPhoto from "../../src/assets/media/ds_project.png"
 import dsPDF from "../../src/assets/media/ds_project.pdf"
 import daPhoto from "../../src/assets/media/bellabeat.png"
+import eztradeHome from "../../src/assets/media/eztrade_home.png"
 
 const projectList = [
+    {
+      imageSrc: eztradeHome,
+      title: "EZ Trade Website",
+      description: "A trading web app built on MongoDB, Express, React and Node (MERN). The app allows users to buy/sell items, manage items by preferences and categories, chat in real-time and management account etc.",
+      buttonLabel: "Trading Website",
+      externalUrl: "https://polar-plateau-00032-13703897852f.herokuapp.com"
+    },
     {
       imageSrc: androidPhoto,
       title: "Android Project",
